@@ -1,3 +1,5 @@
+$colorTd: #ff1818;
+
 * {
     margin: 0;
     padding: 0;
@@ -8,29 +10,24 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #0899a7;
+    background-color: $colorTd;
 }
 
 table {
     background-color: #fff;
 }
 
-tr, td {
+tr,
+td {
     width: 100px;
     height: 100px;
-    border: 1px solid #aa1313;
+    border: 1px solid $colorTd;
     text-align: center;
     font-size: 50px;
     cursor: pointer;
     border-radius: 50%;
+
+    &:hover {
+        background-color: #1b50cb;
+    }
 }
-
-td:hover {
-    background-color: #1b50cb;
-}
-
-
-
-
-
-
